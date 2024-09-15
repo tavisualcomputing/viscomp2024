@@ -1,4 +1,4 @@
-# [viscomp2023](https://cvg.ethz.ch/lectures/Visual-Computing/)
+# [viscomp2024](https://cvg.ethz.ch/lectures/Visual-Computing/)
 Github repository for the Visual Computing course 2024 at ETH Zurich.
 
 ## Requirements for the Vision Part:
