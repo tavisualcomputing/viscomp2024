@@ -11,7 +11,7 @@ main();
 
 // == TASK 1a == //
 // Rearrange mesh indices such that each ball's indices are consecutively grouped, and separated from each other.
-// TIPS: Using the strategy in calVertexColor.
+// TIPS: Using the strategy in calcVertexColor.
 function rearrange(mesh) {
   var newIndices_1 = [];
   var newIndices_2 = [];
@@ -206,9 +206,9 @@ function main() {
 
     gl.clearColor(0.0, 0.0, 0.0, 1.0); // Clear to black, fully opaque
     gl.clearDepth(1.0); // Clear everything
-    // Disable Depth Test since we will do the object-wise depth sorting
-    // gl.enable(gl.DEPTH_TEST); // Enable depth testing
-    // gl.depthFunc(gl.LEQUAL);  // Near things obscure far things
+    
+    gl.enable(gl.DEPTH_TEST); // Enable depth testing
+    gl.depthFunc(gl.LEQUAL);  // Near things obscure far things
     gl.enable(gl.CULL_FACE);     // Simplify the problem by ignoring the back faces of each ball
 
     // == TASK 2 == //
