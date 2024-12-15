@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 12</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
+      integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
+      crossorigin="anonymous"
+      defer></script>
+    <script src="ex12.js" type="module"></script>
+  </head>
+
+  <body>
+    <canvas id="glcanvas" width="500" height="600"></canvas>
+  </body>
+  
+  <script type="text/plain" id="cube.obj">
+    v 1 0 0
+    v 0 1 0
+    v -1 0 0
+    v 0 -1 0
+    v 0 0 -1
+    v 0 0 1
+    vn 1 0 0
+    vn 0 1 0
+    vn -1 0 0
+    vn 0 -1 0
+    vn 0 0 -1
+    vn 0 0 1
+    g Object
+    f 1//1 2//2 6//6
+    f 2//2 3//3 6//6
+    f 3//3 4//4 6//6
+    f 4//4 1//1 6//6
+    f 1//1 4//4 5//5
+    f 2//2 1//1 5//5
+    f 3//3 2//2 5//5
+    f 4//4 3//3 5//5
+  </script>
+  <script type='text/javascript' src='webgl-obj-loader.js'></script>
+</html>
